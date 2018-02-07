@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{PS0}
+\author{Oulbacha Reda, Montréal, QC}
+\date{February 2018}
+
+\begin{document}
+
+\maketitle
+
+\section*{Question 1}
+(a) $$\nabla f(x) = Ax + b$$ \n
+(b) $$nabla f(x) = g'(h(x)) \nabla_x h(x)$$ \n  
+(c) $$ \nabla^2 f(x) = \nabla(\nabla f(x))^T = [\nabla A_1^Tx ... \nabla A_n^Tx ]  = A^T = A $$ where $A_i$ is the ith row vector of matrix $A$ \newline
+(d) $$\nabla f(x) = g'(a^Tx)a$$ \n
+$$ \nabla^2 f(x) = [ \nabla g'(a^Tx)a_1 ... \nabla g'(a^Tx)a_n ] = g''(a^Tx)aa^T $$
+
+\section*{Question 2}
+(a) Clearly $A = zz^T$ is symmetric. Now let x\in$\Bbba R^n$ \n
+$$x^TAx = (x^Tz)(z^Tx) = (x \cdot z)^2 \ge  0$$ \n
+(b) From the previous result it follows that:
+$$ker(A) = span(z)^\bot$$ where the $.^\bot$ means "the orthogonal space of". \n
+\\ Hence, using the rank-nullity theorem, $rank(A) = n - (n-1) = 1 $.
+\\
+\\
+(c) Let x \in $\Bbba R^n$ \n and $y=Bx$ 
+$$x^TBAB^Tx = (Bx)^TA(Bx) = y^TAy\ge0$$
+
+\end{document}
